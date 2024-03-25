@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Programing Tutorial </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--메뉴-->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">성민욱의 홈페이지</div>
+        <ul class="nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">SCP</a>
+          </li>
+          <li>
+            <a href="admin.html">Admin</a>
+          </li>
+          <li>
+            <a href="Schedule.html">Schedule</a>
+          </li>
+        
+        </ul>
+      </div>
+    </nav>
+    <!-- 메인섹션 -->
+    <main class="head">
+    <section class="main">
+      <div class="container">
+        <h1>웹프로그래밍 (Web Programming)</h1>
+        <h3>
+          웹이 어렵다면? :
+          <a href="ht tps://www.w3schools.com/">W3Schools</a>
+          <a href="https://developer.mozilla.org/ko/">MDN</a>
+        </h3>
+        
+        <p class="link">
+          <h3>웹프로그래밍이 어려울 땐?! (그림을 클릭하시오):</h3> 
+          <a href="https://www.w3schools.com/html/default.asp"><img src="img/HTML5img.jpg" alt="" height="100px"></a> HTML
+          <a href="https://www.w3schools.com/css/default.asp"><img src="img/CSSimg.jpg" alt="" height="100px"></a> CSS  
+          <a href="https://www.w3schools.com/js/default.asp"><img src="img/javascriptImg.jpg" alt="" height="100px"></a>JavaScript
+          <a href="https://github.com/"><img src="img/git.jpg" alt="github Site"height="100px"></a>Github
+        </p>
+        <hr>
+        <h3><b>현재시간 :</b> <span id="time"></span></h3>
+        <hr />
+        <br>
+        <div class="shape">
+          <p>
+            <h3>배경색 이 마음에 안드신다구요?</h3>
+              <button onclick="pink()" >pink</button>
+              <button onclick="lightblue()">LightBlue</button>
+              <button onclick="yellow()">Yellow</button>
+              <button onclick="linen()">linen</button>
+              <button onclick="red()">red</button>
+              <button onclick="purple()">purple</button>
+              <button onclick="orange()">orange</button>
+              <button onclick="green()">green</button>
+              <button onclick="blue()">Blue</button>
+          </p>
+        </div>
+          
+    <div class="bt">
+        <p>
+          탬플릿 소개:
+          <button onmouseover="showhtml()" onmouseout="hide()">HTML5</button>
+          <button onmouseover="showcss()" onmouseout="hide()">CSS3</button>
+          <button onmouseover="showjs()" onmouseout="hide()">Javascript</button>
+          <button onmouseover="showSCP()" onmouseout="hide()">SCP</button>
+        </div>     
+        </p>
+        <br />
+        <div class="fig_class">
+          <img id="fig" height="150px" />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+    <script src="main.js"></script>
+  </body>
+  <footer>
+    <br>
+    <fieldset>
+    <legend>설문조사</legend>
+    <p>이 사이트를 평가해 주세요</p>
+    <label for="s_1"><input type="checkbox" id="s_1" value="s_3">★</label>
+    <label for="s_2"><input type="checkbox" id="s_2" value="s_5">★</label>
+    <label for="s_3"><input type="checkbox" id="s_3" value="s_10">★</label>
+    <label for="s_4"><input type="checkbox" id="s_4" value="s_10">★</label>
+    <label for="s_5"><input type="checkbox" id="s_5" value="s_10">★</label>
+    <P>다음에 또 방문하실 생각이 있으신가요?</P>
+    <label for="yes"><input type="radio" id="yes" name="gift" value="yes">yes</label>
+    <label for="no"><input type="radio" id="no" name="gift" value="no">no</label>
+    <input type="submit" value="제출하기">
+  </fieldset>
+</footer>
